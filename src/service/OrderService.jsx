@@ -5,7 +5,7 @@ import {
     GET_ALL_ORDER_API,
     FILTER_ORDER_API
 } from "../../utils/constants";
-import { getHeaders } from "./ApiService";
+import { getHeaders } from "../../utils/httpUtils";
 
 const createOrder = async (order) => {
     const response = await axios.post(`${BASE_URL}${CREATE_ORDER_API}`, order, {

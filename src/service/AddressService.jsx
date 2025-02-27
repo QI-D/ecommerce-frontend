@@ -1,6 +1,6 @@
 import axios from "axios";
 import { BASE_URL, ADDRESS_API } from "../../utils/constants";
-import { getHeaders } from "./ApiService";
+import { getHeaders } from "../../utils/httpUtils";
 
 export const saveAddress = async (address) => {
     const response = await axios.post(`${BASE_URL}${ADDRESS_API}`, address, {

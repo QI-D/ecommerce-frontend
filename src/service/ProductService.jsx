@@ -9,7 +9,7 @@ import {
     GET_PRODUCT_BY_ID_API,
     DELETE_PRODUCT_API
 } from "../../utils/constants";
-import { getHeaders } from "./ApiService";
+import { getHeaders } from "../../utils/httpUtils";
 
 const createProduct = async (formData) => {
     const response = await axios.post(`${BASE_URL}${CREATE_PRODUCT_API}`, formData, {
