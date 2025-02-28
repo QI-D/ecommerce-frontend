@@ -31,7 +31,7 @@ const logout = () => {
     localStorage.removeItem('role');
 };
 
-const isUserAuthenticated = () => {
+const isAuthenticated = () => {
     return !!localStorage.getItem('token');
 };
 
@@ -44,6 +44,6 @@ export {
     loginUser,
     getLoggedInUserInfo,
     logout,
-    isUserAuthenticated,
+    isAuthenticated,
     isAdmin
 };
