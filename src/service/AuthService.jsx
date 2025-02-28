@@ -4,7 +4,7 @@ import {
     USER_REGISTER_API,
     USER_LOGIN_API,
     USER_INFO_API
-} from "../../utils/constants";
+} from "../utils/constants";
 
 const registerUser = async (registration) => {
     const response = await axios.post(`${BASE_URL}${USER_REGISTER_API}`, registration);

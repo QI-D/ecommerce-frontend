@@ -5,8 +5,8 @@ import {
     GET_ALL_CATEGORY_API,
     GET_CATEGORY_BY_ID_API,
     DELETE_CATEGORY_API
-} from "../../utils/constants";
-import { getHeaders } from "../../utils/httpUtils";
+} from "../utils/constants";
+import { getHeaders } from "../utils/httpUtils";
 
 const createCategory = async (category) => {
     const response = await axios.post(`${BASE_URL}${CREATE_CATEGORY_API}`, category, {
