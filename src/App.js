@@ -7,6 +7,7 @@ import { CartProvider } from './component/context/cartContext';
 import Home from './component/pages/Home';
 import ProductDetailsPage from './component/pages/ProductDetailsPage';
 import CategoryListPage from './component/pages/CategoryListPage';
+import CategoryProductPage from './component/pages/CategoryProductPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/' element={<Home/> } />
             <Route path='/product/:productId' element={<ProductDetailsPage/> } />
             <Route path='/categories' element={<CategoryListPage/> } />
+            <Route path='/category/:categoryId' element={<CategoryProductPage/> } />
           </Routes>
         <Footer />
       </CartProvider>
