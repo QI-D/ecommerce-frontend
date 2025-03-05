@@ -47,7 +47,7 @@ const Navbar = () => {
                 {auth && <NavLink to="/profile" >My Account</NavLink>}
                 {admin && <NavLink to="/admin" >Admin</NavLink>}
                 {!auth && <NavLink to="/login" >Login</NavLink>}
-                {auth && <NavLink onClick={handleLogout}>logout</NavLink>}
+                {auth && <NavLink onClick={handleLogout}>Logout</NavLink>}
                 <NavLink to="/cart">Cart</NavLink>
             </div>
         </nav>
