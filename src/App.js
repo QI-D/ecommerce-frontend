@@ -27,9 +27,10 @@ function App() {
             <Route path='/cart' element={<CartPage/> } />
             <Route path='/register' element={<RegisterPage/> } />
             <Route path='/login' element={<LoginPage/> } />
-            <Route path='/profile' element={<ProfilePage/> } />
-            <Route path='/add-address' element={<AddressPage/> } />
-            <Route path='/edit-address' element={<AddressPage/> } />
+            
+            <Route path='/profile' element={<ProtectedRoute element={ProfilePage} /> } />
+            <Route path='/add-address' element={<ProtectedRoute element={AddressPage} /> } />
+            <Route path='/edit-address' element={<ProtectedRoute element={AddressPage} /> } />
           </Routes>
         <Footer />
       </CartProvider>
