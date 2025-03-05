@@ -1,0 +1,95 @@
+.profile-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-page h3 {
+    font-size: 30px;
+}
+
+.profile-page p {
+    margin-bottom: 10px;
+}
+
+.profile-page strong {
+    color: #79bbf1;
+    font-size: 19px;
+}
+
+.profile-page ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-page li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-page li:hover {
+    background-color: #ecebeb;
+}
+
+.profile-page img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.profile-page li div {
+    flex-grow: 1;
+}
+
+.profile-page li h4 {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 1.3rem;
+}
+
+.profile-page li p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.profile-button {
+    background-color: #79bbf1;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-button:hover {
+    background-color: #5ca8e6;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
