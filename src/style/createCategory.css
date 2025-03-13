@@ -1,0 +1,37 @@
+.create-category-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 5px 20px 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.category-form button {
+    background-color: #79bbf1;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 13px 20px;
+}
+
+.category-form button:hover {
+    background-color: #378ad3;
+}

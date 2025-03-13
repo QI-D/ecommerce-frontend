@@ -15,6 +15,7 @@ import ProfilePage from './component/pages/ProfilePage';
 import AddressPage from './component/pages/AddressPage';
 import AdminPage from './component/admin/AdminPage';
 import AdminCategoryPage from './component/admin/AdminCategoryPage';
+import CreateCategory from './component/admin/CreateCategory';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             {/* Routes for Admin */}
             <Route path='/admin' element={<AdminRoute element={AdminPage} />} />
             <Route path='/admin/categories' element={<AdminRoute element={AdminCategoryPage} />} />
+            <Route path='/admin/create-category' element={<AdminRoute element={CreateCategory} />} />
 
           </Routes>
         <Footer />
