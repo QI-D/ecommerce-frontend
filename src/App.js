@@ -17,6 +17,7 @@ import AdminPage from './component/admin/AdminPage';
 import AdminCategoryPage from './component/admin/AdminCategoryPage';
 import CreateCategory from './component/admin/CreateCategory';
 import UpdateCategory from './component/admin/UpdateCategory';
+import AdminProductPage from './component/admin/AdminProductPage';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
             <Route path='/admin/categories' element={<AdminRoute element={AdminCategoryPage} />} />
             <Route path='/admin/create-category' element={<AdminRoute element={CreateCategory} />} />
             <Route path='/admin/update-category/:categoryId' element={<AdminRoute element={UpdateCategory} />} />
+
+            <Route path='/admin/products' element={<AdminRoute element={AdminProductPage} />} />
 
           </Routes>
         <Footer />

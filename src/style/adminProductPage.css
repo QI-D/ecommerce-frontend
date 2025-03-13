@@ -1,0 +1,79 @@
+.admin-product-page {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.admin-product-list {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.admin-product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 15px;
+    margin-bottom: 20px;
+}
+
+.admin-product-list h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.admin-product-list button {
+    background-color: #79bbf1;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.admin-product-list button:hover {
+    background-color: #378ad3;
+}
+
+.admin-product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-product-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admin-product-list ul li span {
+    color: #444;
+}
+
+.admin-btn button {
+    background-color: tomato;
+    color: white;
+    border: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.admin-btn .admin-btn-update {
+    background-color: #79bbf1;
+}
+
+.admin-btn .admin-btn-delete:hover {
+    background-color: rgb(189, 78, 58);
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
