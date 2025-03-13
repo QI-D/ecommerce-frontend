@@ -6,6 +6,7 @@ import { isAdmin, isAuthenticated, logout } from "../../service/AuthService";
 
 const Navbar = () => {
     const [searchValue, setSearchValue] = useState('');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
 
     const admin = isAdmin();
@@ -30,6 +31,10 @@ const Navbar = () => {
         }
     }
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -41,14 +46,20 @@ const Navbar = () => {
                 <button type="submit" className="search-btn">Search</button>
             </form>
 
-            <div className="navbar-link">
-                <NavLink to="/" >Home</NavLink>
-                <NavLink to="/categories" >Categories</NavLink>
-                {auth && <NavLink to="/profile" >My Account</NavLink>}
-                {admin && <NavLink to="/admin" >Admin</NavLink>}
-                {!auth && <NavLink to="/login" >Login</NavLink>}
-                {auth && <NavLink onClick={handleLogout}>Logout</NavLink>}
-                <NavLink to="/cart">Cart</NavLink>
+            <button className="navbar-toggle" onClick={toggleMenu}>
+                ☰
+            </button>
+
+            <div className={`navbar-collapse ${isMenuOpen ? 'active' : ''}`}>
+                <div className="navbar-link">
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/categories">Categories</NavLink>
+                    {auth && <NavLink to="/profile">My Account</NavLink>}
+                    {admin && <NavLink to="/admin">Admin</NavLink>}
+                    {!auth && <NavLink to="/login">Login</NavLink>}
+                    {auth && <NavLink onClick={handleLogout}>Logout</NavLink>}
+                    <NavLink to="/cart">Cart</NavLink>
+                </div>
             </div>
         </nav>
     )
