@@ -47,7 +47,7 @@ const AdminCategoryPage = () => {
                 <div className="admin-category-header">
                     <h2>Categories</h2>
                     {error && <p className="error-message">{error}</p>}
-                    <button onClick={() => {navigate('/admin/add-category')}}>Create Category</button>
+                    <button onClick={() => {navigate('/admin/create-category')}}>Create Category</button>
                 </div>
                 <ul>
                     {categories.map((category) => (
