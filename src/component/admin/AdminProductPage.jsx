@@ -50,8 +50,8 @@ const AdminProductPage = () => {
             <div className='admin-product-list'>
                 <div className="admin-product-header">
                     <h2>Products</h2>
-                    {error && <p className="error-message">{error}</p>}
                     <button onClick={() => {navigate('/admin/create-product')}}>Create Product</button>
+                    {error && <p className="error-message">{error}</p>}
                 </div>
                 <ul>
                     {products.map((product) => (
