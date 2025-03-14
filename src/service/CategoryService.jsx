@@ -18,7 +18,17 @@ const createCategory = async (category) => {
 
 const getAllCategories = async () => {
     const response = await axios.get(`${BASE_URL}${GET_ALL_CATEGORY_API}`);
-    return response.data;
+
+    const sortedCategories = response.data.categoryList.sort((a, b) => {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+    });
+
+    return {
+        ...response.data,
+        categoryList: sortedCategories
+    };
 };
 
 const getCategoryById = async (categoryId) => {
