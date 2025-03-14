@@ -6,10 +6,13 @@ import '../../style/createCategory.css'
 const CreateCategory = () => {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        setError('')
 
         try {
             const response = await createCategory({name});
@@ -23,7 +26,7 @@ const CreateCategory = () => {
             }
 
         } catch (error) {
-            setMessage(error.response?.data?.message || error.message || 'Unable to create category');
+            setError(error.response?.data?.message || error.message || 'Unable to create category');
         }
     }
 
@@ -31,6 +34,7 @@ const CreateCategory = () => {
         <div className='create-category-page'>
             <h2>Create Category</h2>
             {message && <p className='message'>{message}</p>}
+            {error && <p className='error-message'>{error}</p>}
             <form onSubmit={handleSubmit} className='category-form'>
                 <input type='text'
                     placeholder='Category Name'

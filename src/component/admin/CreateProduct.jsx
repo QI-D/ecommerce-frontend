@@ -26,6 +26,8 @@ const CreateProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        setError('')
+
         try {
             const formData = new FormData();
             formData.append('categoryId', categoryId);
