@@ -1,0 +1,92 @@
+.admin-orders-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.admin-orders-page h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container select {
+    padding: 9px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.status-filter {
+    display: flex;
+    align-items: center;
+}
+
+.search-status {
+    display: flex;
+    align-items: center;
+}
+
+.status-filter label,
+.search-status label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.orders-table th {
+    background-color: #f2f2f2;
+}
+
+.orders-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.orders-table td {
+    vertical-align: middle;
+}
+
+.orders-table td button {
+    display: block;
+    margin: 0 auto;
+}
+
+tbody button {
+    background-color: #79bbf1;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #378ad3;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}

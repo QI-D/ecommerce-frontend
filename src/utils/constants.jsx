@@ -28,5 +28,7 @@ export const ADDRESS_API = '/address/save';
 
 // order endpoints
 export const CREATE_ORDER_API = '/order/create';
-export const GET_ALL_ORDER_API = '/order/get-all';
+export const GET_ALL_ORDER_API = '/order/filter';
 export const FILTER_ORDER_API = '/order/filter';
+
+export const ORDER_STATUS = ['PENDING', 'CONFIRMED', 'SHIPPED', 'DELIVERED', 'CANCELLED', 'RETURNED'];
