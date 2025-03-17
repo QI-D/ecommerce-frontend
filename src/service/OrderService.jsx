@@ -22,7 +22,7 @@ const getAllOrders = async () => {
 };
 
 const getOrdersById = async (itemId) => {
-    const response = await axios.get(`${BASE_URL}${FILTER_ORDER_API}`, {
+    const response = await axios.get(`${BASE_URL}${GET_ALL_ORDER_API}`, {
         headers: getHeaders(),
         params: { itemId }
     });
@@ -30,7 +30,7 @@ const getOrdersById = async (itemId) => {
 };
 
 const getOrderByStatus = async (status) => {
-    const response = await axios.get(`${BASE_URL}${FILTER_ORDER_API}`, {
+    const response = await axios.get(`${BASE_URL}${GET_ALL_ORDER_API}`, {
         headers: getHeaders(),
         params: { status }
     });
@@ -38,7 +38,7 @@ const getOrderByStatus = async (status) => {
 };
 
 const updateOrderStatus = async (orderItemId, status) => {
-    const response = await axios.put(`${BASE_URL}${FILTER_ORDER_API}/${orderItemId}`, {
+    const response = await axios.put(`${BASE_URL}${FILTER_ORDER_API}/${orderItemId}`, {}, {
         headers: getHeaders(),
         params: { status }
     });
